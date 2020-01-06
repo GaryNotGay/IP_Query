@@ -1,7 +1,7 @@
 # @Author  :  lijishi
 # @Contact :  lijishi@emails.bjut.edu.cn
 # @Software:  Pycharm & Python 3.7
-# @EditTime:  Jan 5, 2020
+# @EditTime:  Jan 6, 2020
 # @Version :  1.0
 # @describe:  Realize IP Adress Query
 # @LICENSE :  GNU GENERAL PUBLIC LICENSE Version 3
@@ -12,13 +12,18 @@
 
 # References
 # https://blog.csdn.net/qq_27378621/article/details/88828581
+# https://blog.csdn.net/lion_cui/article/details/51329497
 
 import requests
+import base64
 import re
+import os
 import tkinter as tk
+import tkinter.messagebox
 from tkinter import ttk
 from tkinter import *
-import tkinter.messagebox
+from picture import Icon
+from picture import Gif
 
 def GetLocalIP():
 
@@ -33,7 +38,8 @@ def GetLocalIP():
             break;
 
     local_ip.set(html_text[index_start+16: index_end])
-    find_ip.set(html_text[index_start + 16: index_end])
+    find_ip.set(html_text[index_start+16: index_end])
+    GetIP()
 
 def GetIP():
     url='http://freeapi.ipip.net/'
@@ -89,11 +95,22 @@ def About():
     # window layout
     global cha_gif
     about_window.title('About')
-    about_window.iconbitmap(".\\cha.ico")
-    cha_gif = tk.PhotoImage(file=".\\cha.gif")
+    with open('tmp.ico', 'wb') as tmp:
+        tmp.write(base64.b64decode(Icon().img))
+    about_window.iconbitmap('tmp.ico')
+    os.remove('tmp.ico')
+#    about_window.iconbitmap(".\\cha.ico")
+    with open('tmp.gif', 'wb') as tmp:
+        tmp.write(base64.b64decode(Gif().img))
+#    about_window.iconbitmap('temp.gif')
+    cha_gif = tk.PhotoImage(file="tmp.gif")
+
+#    os.remove('temp.gif')
+#    cha_gif = tk.PhotoImage(file=".\\cha.gif")
     software_frame = ttk.LabelFrame(about_window, text='Software Info')
     software_frame.grid(row=0, column=0, rowspan=5, columnspan=4, padx=50, pady=5)
     ttk.Label(software_frame, image=cha_gif, compound='left').grid(row=0, rowspan=3, column=0)
+    os.remove('tmp.gif')
     ttk.Label(software_frame, text="IP Query Version 1.0").grid(row=0, column=1, sticky = W)
     ttk.Label(software_frame, text="@Author    :   lijishi").grid(row=1, column=1, sticky = W)
     ttk.Label(software_frame, text="@EditTime  :   Jan 5,2020").grid(row=2, column=1, sticky = W)
@@ -126,7 +143,11 @@ main_window.geometry("%dx%d+%d+%d" %(main_window_width,main_window_heigh,x,y))
 
 # window layout
 main_window.title("IP Query V1.0")
-main_window.iconbitmap(".\\cha.ico")
+with open('tmp.ico', 'wb') as tmp:
+    tmp.write(base64.b64decode(Icon().img))
+main_window.iconbitmap('tmp.ico')
+os.remove('tmp.ico')
+#main_window.iconbitmap(".\\cha.ico")
 local_ip = tk.StringVar()
 find_ip = tk.StringVar()
 ip_address = tk.StringVar()
@@ -143,7 +164,5 @@ ttk.Label(main_window, text = "运营商：").grid(row = 3, column = 0, padx=10)
 ttk.Label(main_window, width = 25, textvariable = ip_company).grid(row = 3, column = 1, padx=10)
 ttk.Button(main_window, width = 10, text = "提示", command = Tips).grid(row = 2, column = 2, padx=10)
 ttk.Button(main_window, width = 10, text = "关于", command = About).grid(row = 3, column = 2, padx=10)
-
-
 
 main_window.mainloop()
