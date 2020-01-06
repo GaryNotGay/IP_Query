@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a622001f-2b04-4581-9cd7-3f9d7f3c8326" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/IP_Query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Include/IP_Query.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +133,7 @@
       <updated>1578222674670</updated>
       <workItem from="1578222677686" duration="6644000" />
       <workItem from="1578232643804" duration="2281000" />
-      <workItem from="1578287688020" duration="4709000" />
+      <workItem from="1578287688020" duration="5171000" />
     </task>
     <task id="LOCAL-00001" summary="Query the location of the IP address and the local IP">
       <created>1578234517203</created>
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578234517203</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update to can be packaged directly">
+      <created>1578292525148</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578292525149</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,13 +157,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Query the location of the IP address and the local IP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Query the location of the IP address and the local IP" />
+    <MESSAGE value="Update to can be packaged directly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update to can be packaged directly" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="613" y="138" key="CommitChangelistDialog2" timestamp="1578234497399">
+    <state x="613" y="138" key="CommitChangelistDialog2" timestamp="1578293051066">
       <screen x="81" y="0" width="1839" height="1080" />
     </state>
-    <state x="613" y="138" key="CommitChangelistDialog2/81.0.1839.1080@81.0.1839.1080" timestamp="1578234497399" />
+    <state x="613" y="138" key="CommitChangelistDialog2/81.0.1839.1080@81.0.1839.1080" timestamp="1578293051066" />
     <state x="257" y="94" key="DiffContextDialog" timestamp="1578234469087">
       <screen x="81" y="0" width="1839" height="1080" />
     </state>
@@ -166,10 +173,10 @@
       <screen x="81" y="0" width="1839" height="1080" />
     </state>
     <state x="826" y="454" width="373" height="171" key="Github.CreateGistDialog/81.0.1839.1080@81.0.1839.1080" timestamp="1578233152035" />
-    <state x="874" y="436" width="274" height="208" key="Github.ShareDialog" timestamp="1578233292318">
+    <state x="874" y="436" width="390" height="221" key="Github.ShareDialog" timestamp="1578292831236">
       <screen x="81" y="0" width="1839" height="1080" />
     </state>
-    <state x="874" y="436" width="274" height="208" key="Github.ShareDialog/81.0.1839.1080@81.0.1839.1080" timestamp="1578233292318" />
+    <state x="874" y="436" width="390" height="221" key="Github.ShareDialog/81.0.1839.1080@81.0.1839.1080" timestamp="1578292831236" />
     <state x="776" y="248" key="Github.UntrackedFilesDialog" timestamp="1578233337444">
       <screen x="81" y="0" width="1839" height="1080" />
     </state>
@@ -194,10 +201,10 @@
       <screen x="81" y="0" width="1839" height="1080" />
     </state>
     <state x="503" y="185" key="SettingsEditor/81.0.1839.1080@81.0.1839.1080" timestamp="1578232731095" />
-    <state x="592" y="276" key="Vcs.Push.Dialog.v2" timestamp="1578234546360">
+    <state x="592" y="276" key="Vcs.Push.Dialog.v2" timestamp="1578292675575">
       <screen x="81" y="0" width="1839" height="1080" />
     </state>
-    <state x="592" y="276" key="Vcs.Push.Dialog.v2/81.0.1839.1080@81.0.1839.1080" timestamp="1578234546360" />
+    <state x="592" y="276" key="Vcs.Push.Dialog.v2/81.0.1839.1080@81.0.1839.1080" timestamp="1578292675575" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IP_Query$IP_Query.coverage" NAME="IP_Query Coverage Results" MODIFIED="1578291856879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Include" />
