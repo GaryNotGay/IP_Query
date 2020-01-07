@@ -3,7 +3,7 @@
 # @Software:  Pycharm & Python 3.7
 # @EditTime:  Jan 6, 2020
 # @Version :  1.0
-# @describe:  Realize IP Adress Query
+# @describe:  Used for packaging images
 # @LICENSE :  GNU GENERAL PUBLIC LICENSE Version 3
 
 import base64
